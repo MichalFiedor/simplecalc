@@ -38,23 +38,25 @@ public class Calculator {
         return result;
     }
 
-    public double divide(int num1, int num2) {
-        try {
+    public double divide(Double num1, Double num2) {
+        if(num2==0) {
+            System.out.println("You can not divide by 0");
+            addingOperation("Divided by 0");
+            addToGlobalHistory("Divided by 0 ");
+            return 0.0;
+        } else{
             double result = num1 / num2;
-            addingOperation("divided " + num1 + " by " + num2 + " got " + (double) num1 / (double) num2);
-            addToGlobalHistory("divided " + num1 + " by " + num2 + " got " + (double) num1 / (double) num2);
-            return (double) num1 / (double) num2;
-        } catch (ArithmeticException e) {
-            System.out.println("You can't divide by 0");
-            return 0;
+            addingOperation("divided " + num1 + " by " + num2 + " got " + num1 / num2);
+            addToGlobalHistory("divided " + num1 + " by " + num2 + " got " + num1 / num2);
+            return result;
         }
-    }
+        }
 
-    public Double pow(Double num1, Double num2){
+    public Double pow(Double num1, Double num2) {
         return 0.0;
     }
 
-    public void  printOperations() {
+    public void printOperations() {
         System.out.println(StringUtils.join(operationHistory, ", "));
     }
 
