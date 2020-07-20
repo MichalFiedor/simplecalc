@@ -1,4 +1,4 @@
-#Calculator
+#Calculator#
 	Simple calculator, based on two classes: Calculator and AdvancedCalculator. AdvancedCalculator class inherit from Calculator and append new features.
 ##Features, which are contained in app: 
 *public **add** method,
