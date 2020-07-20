@@ -8,4 +8,5 @@
 * public **pow** method,
 * public **root** method,
 * public static **computeCircleArea** method,
-	### Each of these methods, after every done operation adds description to **global history array** for every class instance and **operation history array** for Calculator class instances. Operation history and global operations history can be printed by **printOperations** method and overloaded static **printGlobalOperations** method. You can also erase all history by **clearOperation** method and static **clearGlobalHistory** method.
+	
+	Each of these methods, after every done operation adds description to **global history array** for every class instance and **operation history array** for Calculator class instances. Operation history and global operations history can be printed by **printOperations** method and overloaded static **printGlobalOperations** method. You can also erase all history by **clearOperation** method and static **clearGlobalHistory** method.
