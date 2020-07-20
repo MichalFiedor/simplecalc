@@ -57,7 +57,7 @@ public class AdvancedCalculator extends Calculator {
         }
         System.out.println(sb.toString());
     }
-
+    @Override
     public String[] addToGlobalHistory(String description) {
         allHistory = Arrays.copyOf(allHistory, allHistory.length + 1);
         allHistory[allHistory.length - 1] = description;
